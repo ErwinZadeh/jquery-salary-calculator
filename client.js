@@ -1,10 +1,10 @@
 // console.log('client loaded!');
-$(document).ready(handleReady);
+$(document).ready(onReady);
 
 let employees = [];
 let totalMonthly = 0;
 
-function handleReady() {
+function onReady() {
   // console.log('jquery loaded');
   addClickListeners();
 }
