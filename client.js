@@ -58,5 +58,30 @@ function addInfo() {
   $('#jobTitleIn').val('');
   $('#annualSalaryIn').val('');
 
+  calculateTotalMonthly();
+}
 
+function calculateTotalMonthly() {
+  // console.log('clicked calculate total info');
+  //we assume in this function locally "totalMontly = 0", to prevent 
+  //each time we add a new emoloyee , it be added to the loop again, 
+  //otherwise "totalMonthly" will not correct!
+  let totalMonthly = 0;
+  for (let i = 0; i < employees.length; i++) {
+    totalMonthly += Number(employees[i].annualSalary / 12);
+  }
+  // console.log('totalMonthly:', totalMonthly);
+
+  let el = $('#totalMonthlyOut');
+  el.empty();
+  el.append(totalMonthly);
+  exceedingTotalMontkly(totalMonthly);
+} 
+
+//If the total monthly cost exceeds $20,000, 
+//add a red background color to the total monthly cost.
+function exceedingTotalMontkly(totalMonthly) {
+  if ( totalMonthly > 20000 ) {
+    $("#totalMonthlyOut").css("background-color", "red");
+  }
 }
