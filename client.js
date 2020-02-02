@@ -76,12 +76,12 @@ function calculateTotalMonthly() {
   el.empty();
   el.append(totalMonthly);
   exceedingTotalMontkly(totalMonthly);
-} 
+}
 
 //If the total monthly cost exceeds $20,000, 
 //add a red background color to the total monthly cost.
 function exceedingTotalMontkly(totalMonthly) {
-  if ( totalMonthly > 20000 ) {
+  if (totalMonthly > 20000) {
     $("#totalMonthlyOut").css("background-color", "red");
   }
 }

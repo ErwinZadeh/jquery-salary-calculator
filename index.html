@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="bootstrap.css">
- <link href="style.css">
- <script src="jquery-3.4.1.min.js"></script>
- <script src="client.js"></script>
- <title>Salary Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="client.js"></script>
+    <title>Salary Calculator</title>
 </head>
+
 <body class="container">
-  <header>
-    <h1 class="jumbotron">Salary Calculator - Erwin JQuery Solo Project</h1>
-  </header>
-  <main>
-    <h2>Add Employee</h2>
-      <div id="inputZone">
-        <input id="firstNameIn" type="text" placeholder="First Name">
-        <input id="lastNameIn" type="text" placeholder="Last Name">
-        <input id="idNumberIn" type="number" placeholder="ID Number">
-        <input id="jobTitleIn" type="text" placeholder="Job Title">
-        <input id="annualSalaryIn" type="text" placeholder="Annual Salary"></br>
-        <button id= "addSubmitBtn" class="btn btn-outline-success">Submit</button>
-      </div>
-    <h2>Employees</h2>
-    <table class="table table-striped blue"> 
-      <thead class="thead-dark">
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>ID Number</th>
-          <th>Job Title</th>
-          <th>Annual Salary</th>
-          <th>Delete?</th>
-        </tr>
-      </thead>
-      <tbody id="addNewEmployeeSpace">
-        <!-- jquery will append things here -->  
-      </tbody>
-    </table>
-  </main>
-  <footer>
-    <h2>Total Monthly: $<span id="totalMonthlyOut"></span></h2>
-  </footer>
-</body> 
+    <header>
+        <h1 class="jumbotron">Salary Calculator - Erwin JQuery Solo Project</h1>
+    </header>
+    <main>
+        <h2>Add Employee</h2>
+        <div id="inputZone">
+            <input id="firstNameIn" type="text" placeholder="First Name">
+            <input id="lastNameIn" type="text" placeholder="Last Name">
+            <input id="idNumberIn" type="number" placeholder="ID Number">
+            <input id="jobTitleIn" type="text" placeholder="Job Title">
+            <input id="annualSalaryIn" type="text" placeholder="Annual Salary"></br>
+            <button id="addSubmitBtn" class="btn btn-outline-success">Submit</button>
+        </div>
+        <h2>Employees</h2>
+        <table class="table table-striped blue">
+            <thead class="thead-dark">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>ID Number</th>
+                    <th>Job Title</th>
+                    <th>Annual Salary</th>
+                    <th>Delete?</th>
+                </tr>
+            </thead>
+            <tbody id="addNewEmployeeSpace">
+                <!-- jquery will append things here -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <h2>Total Monthly: $<span id="totalMonthlyOut"></span></h2>
+    </footer>
+</body>
+
 </html>
