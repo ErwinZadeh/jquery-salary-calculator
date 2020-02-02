@@ -20,6 +20,7 @@ function deleteInfo() {
   // console.log('clicked delete Info');
   let button = $(this);
   button.closest('tr').remove();
+  
 }
 
 function addInfo() {

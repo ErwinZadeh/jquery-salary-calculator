@@ -1,0 +1,3 @@
+I could design an application which can get inputs from the customers including; first name, last name, ID number, job title, annual salary, and by clicking on "Submit" button collects the form information, store the information to calculate monthly costs of employees for the company, append information to the DOM and clear the input fields. 
+By using the stored information, calculates monthly costs and append this to the to DOM. If the total monthly cost exceeds $20K, adds a red background color to the total monthly cost.
+By creating a delete button that removes an employee from the DOM. It does not remove that Employee's salary from the reported total, though.
