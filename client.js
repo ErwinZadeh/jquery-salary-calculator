@@ -1,3 +1,4 @@
+// console.log('client loaded!');
 $(document).ready(handleReady);
 
 let employees = [];
@@ -10,9 +11,16 @@ function handleReady() {
 
 function addClickListeners() {
   $('#addSubmitBtn').on('click', addInfo);
-  
+  //to trigger removing the employee line by click on delete in the line!
+  $('#addNewEmployeeSpace').on('click', '.deleteBtn', deleteInfo);
 }
 
+//to remove the employee line by click on delete in the line
+function deleteInfo() {
+  // console.log('clicked delete Info');
+  let button = $(this);
+  button.closest('tr').remove();
+}
 
 function addInfo() {
   // console.log('clicked add Info!');
